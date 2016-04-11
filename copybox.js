@@ -1,3 +1,5 @@
+//...copyToClipboard() courtesy of jfriend00's answer, my lack of coffee, and my laziness
+//But mostly jfriend00's answer 
 function copyToClipboard(elem) {
 	  // create hidden text element, if it doesn't already exist
     var targetId = "_hiddenCopyText_";
