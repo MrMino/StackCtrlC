@@ -6,6 +6,12 @@ A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript a
 - It follows the css from `.post-tag` class (so you don't need to worry about Stylish).
 - It makes my live easier, so I guess it will make yours too. 
 
+## See for yourself
+#### Default layout (without stylish)
+![Copy button in its full grace](https://cloud.githubusercontent.com/assets/6691643/14416175/67a02c7e-ffa7-11e5-87aa-0d4d6e8c3826.gif)
+#### StackOverflow Dark (Stylish stylesheet) 
+![Copy button on a dark layout](https://cloud.githubusercontent.com/assets/6691643/14416174/6428239e-ffa7-11e5-92da-715ba453e962.gif)
+
 ## Why?
 - Because after all this time, and even though there exists this piece of meta: [Meta](https://meta.stackexchange.com/questions/32625/shortcut-or-button-for-copying-posted-code-from-stack-overflow), [and even more Meta](https://meta.stackoverflow.com/questions/251883/select-all-copy-all-button-for-code), SO devs still did nothing with this. 
 - It's been 7 (SEVEN) years. For Christ's sake.
