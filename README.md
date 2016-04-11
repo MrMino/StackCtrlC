@@ -13,7 +13,8 @@ A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript a
 ![Copy button on a dark layout](https://cloud.githubusercontent.com/assets/6691643/14416174/6428239e-ffa7-11e5-92da-715ba453e962.gif)
 
 ## Why?
-- Because after all this time, and even though there exists this piece of meta: [Meta](https://meta.stackexchange.com/questions/32625/shortcut-or-button-for-copying-posted-code-from-stack-overflow), [and even more Meta](https://meta.stackoverflow.com/questions/251883/select-all-copy-all-button-for-code), SO devs still did nothing with this. 
+###### Because:
+- After all this time, and even though there exists this piece of meta: [Meta](https://meta.stackexchange.com/questions/32625/shortcut-or-button-for-copying-posted-code-from-stack-overflow), [and even more Meta](https://meta.stackoverflow.com/questions/251883/select-all-copy-all-button-for-code), SO devs still did nothing with this. 
 - It's been 7 (SEVEN) years. For Christ's sake.
 - Every single plugin I found on this topic was made with a total disregard for Stylish plugin. And it hurts my eyes.
 - [Not invented here syndrome.](https://en.wikipedia.org/wiki/Not_invented_here)
