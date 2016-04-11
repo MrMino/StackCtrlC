@@ -10,7 +10,7 @@ A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript a
 #### Default layout (without stylish)
 ![Copy button in its full grace](https://cloud.githubusercontent.com/assets/6691643/14416175/67a02c7e-ffa7-11e5-87aa-0d4d6e8c3826.gif)
 #### StackOverflow Dark (Stylish stylesheet) 
-![Copy button on a dark layout](https://cloud.githubusercontent.com/assets/6691643/14416174/6428239e-ffa7-11e5-92da-715ba453e962.gif)
+![Copy button on a dark layout](https://cloud.githubusercontent.com/assets/6691643/14444065/94f5c64c-0043-11e6-95a2-d015e3f0184f.gif)
 
 ## Why?
 ###### Because:
