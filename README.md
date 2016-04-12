@@ -30,6 +30,6 @@ A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript a
 
 
 ## Notes
-**I (this extension's author) am not affiliated with Stack Overflow, Stack Exchange, or any other site from Stack Exchange Network.**
+**I (this extension's author) am not affiliated (not working for) with Stack Overflow, Stack Exchange, nor any other site from Stack Exchange Network.**
 
 **It probably won't work with Safari**. Simply put, at the time of writing this, Safari doesn't support `document.execCommand('copy')`, or some similar shenanigans are involved, and I don't support Safari. Code appreciated [tho](https://www.youtube.com/watch?v=_zbacoPpUSA).
