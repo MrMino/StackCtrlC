@@ -1,6 +1,9 @@
+
+
 # StackOverflowCtrlC
 A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript and JQuery.
 
+[![Chrome webstore](https://cloud.githubusercontent.com/assets/6691643/14452253/b283ca98-008d-11e6-86c7-4379f4ea02ce.png)](https://chrome.google.com/webstore/detail/stack-copy-button/dkejincbnheemdddmbiggcnlidffpedf/reviews)
 ## Features
 - A copy button made entirely with JavaScript and JQuery. 
 - It follows the css from `.post-tag` class (so you don't need to worry about Stylish).
@@ -22,7 +25,6 @@ A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript a
 ## Install process
 I'm working on it.
 
-![Chrome webstore](https://cloud.githubusercontent.com/assets/6691643/14452253/b283ca98-008d-11e6-86c7-4379f4ea02ce.png)
 
 ## Notes
 **I (this extension's author) am not affiliated with Stack Overflow, Stack Exchange, or any other site from Stack Exchange Network.**
