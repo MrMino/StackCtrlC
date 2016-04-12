@@ -1,57 +1,41 @@
-//Code from copyToClipboard() courtesy of jfriend00's modified answer, my lack of coffee, and my laziness
-//https://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery/22581382#22581382
-//
-//
-//But mostly jfriend00's answer 
-//Slightly modified by me, to fit my reality
-function copyToClipboard(elem) {
-    var targetId = "_hiddenCopyText_";
-    var origSelectionStart, origSelectionEnd;
-    origSelectionStart = elem.selectionStart;
-    origSelectionEnd = elem.selectionEnd;
+/*  Code written by:      Blazej "MrMino" Michalik
+                            im.mr.mino@gmail.com
+    Licence:            
+    The MIT License (MIT)
+    Copyright (c) 2016 by Błażej "MrMino" Michalik
+*/
+
+// Dump text in toCopy into clipboard
+function copyToClipboard(toCopy) {
+    // Id of temporary form element for the selection and copy
+    var hiddenTextAreaId = "_CopyButtonTextArea_";
     
-    // Must use a temporary form element for the selection and copy
-    // Create hidden text element, if it doesn't already exist
-    target = document.getElementById(targetId);
-    if (!target) {
-        var target = document.createElement("textarea");
-        target.style.position = "absolute";
-        target.style.left = "-9999px";
-        target.style.top = "0";
-        target.id = targetId;
-        document.body.appendChild(target);
-    }
-    target.textContent = elem.textContent;
+    // Get scrollbar position to restore it afterwards
+    var scrollPos = $(window).scrollTop();
+
+    // Create hidden text element
+    var $hid = $('<textarea></textarea>');
+    $hid.attr('id', hiddenTextAreaId);
+    $('body').append($hid);
     
-    // select the content
-    var currentFocus = document.activeElement;
-    target.focus();
-    target.setSelectionRange(0, target.value.length);
+    $hid.text(toCopy);
     
-    // copy the selection
-    var succeed;
-    try {
-          succeed = document.execCommand("copy");
-    } catch(e) {
-        succeed = false;
-    }
-    // restore original focus
-    if (currentFocus && typeof currentFocus.focus === "function") {
-        currentFocus.focus();
-    }
+    // Select the content
+    $hid.get(0).focus();
+    $hid.get(0).setSelectionRange(0, toCopy.length);
     
-    if (isInput) {
-        // restore prior selection
-        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
-    } else {
-        // clear temporary content
-        target.textContent = "";
-    }
-    return succeed;
+    // Copy the selection
+    document.execCommand("copy");
+
+    // Clear temporary content
+    $('#'+hiddenTextAreaId).remove();
+
+    // Restore scrollbar position
+    $(window).scrollTop(scrollPos);
 }
 
 $(document).ready(function () {
-    var button = $('<button class="_copyButton">Copy</button>');
+    var button = $('<button class="_copyButton_">Copy</button>');
     
     //CSS is copied from .post-tag class, to ensure proper style when stylish is present
     //Button isn't just enclased as post-tag, to make sure nothing interferes with positioning
@@ -98,13 +82,14 @@ $(document).ready(function () {
         
         //Click event
         clone.click(function(){
-            copyToClipboard($(this).parent().find("code").get(0));
+            var toCopy = $(this).parent().find("code").text();
+            copyToClipboard( toCopy );
         });
         
-        $(this).find('._copyButton').fadeIn();
+        $(this).find('._copyButton_').fadeIn();
     }, function (){
         //======================= Mouse out ======================
-        $(this).find('._copyButton').fadeOut(function(){
+        $(this).find('._copyButton_').fadeOut(function(){
             $(this).remove();
         });
     });
