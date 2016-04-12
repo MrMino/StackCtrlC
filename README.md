@@ -23,7 +23,8 @@ A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript a
 - [Not invented here syndrome.](https://en.wikipedia.org/wiki/Not_invented_here)
 
 ## Install process
-I'm working on it.
+**Firefox** : Review pending. Will be avaible soon.
+**Opera**   : Workin on it.
 
 
 ## Notes
