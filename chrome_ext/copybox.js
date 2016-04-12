@@ -5,10 +5,6 @@
     Copyright (c) 2016 by Błażej "MrMino" Michalik
 */
 
-// Code in copybox.min.js was compiled with 
-// https://closure-compiler.appspot.com/home
-// This is the unpacked version
-
 // Dump text in toCopy into clipboard
 function copyToClipboard(toCopy) {
     // Id of temporary form element for the selection and copy
