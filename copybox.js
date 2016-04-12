@@ -35,10 +35,12 @@ function copyToClipboard(toCopy) {
 }
 
 $(document).ready(function () {
-    var button = $('<button class="_copyButton_">Copy</button>');
-    
-    //CSS is copied from .post-tag class, to ensure proper style when stylish is present
-    //Button isn't just enclased as post-tag, to make sure nothing interferes with positioning
+    var buttonId = '_copyButton_';
+    var button = $('<button>Copy</button>').attr('class', buttonId);
+
+    // CSS is copied from .post-tag class, to ensure proper style when stylish is present
+    // Not just cloned, because there are too many properties that trip up jquery
+    // Button isn't just enclased as post-tag, to make sure nothing interferes with positioning
     var copycat = $('.post-tag');
     var css_string = {
         'display':'none',
@@ -58,28 +60,26 @@ $(document).ready(function () {
     };
     button.css(css_string);
     
-    //Calculating button width
-    //Element needs to be present in DOM to calculate it's width
-    //I blame Hakon Wium Lie
+    // Calculating button width
+    // Element needs to be present in DOM to calculate it's width
+    // I blame Hakon Wium Lie
     $('body').append(button);
     var offset = button.width();
     button.remove();
-    
-    //For some reason, offset is still too low. I blame W3C.
+
+    // For some reason, offset is still too low. I blame W3C.
     offset += 30;
     
-    //Hiding, fading, showing, etc.
+    // Hiding, fading, showing, etc.
     $('pre').hover(function (){
-        //Calculating the right position for the button to appear
-        var pos = $(this).width();
-        pos -= offset;
-        
-        //Button is cloned, so jquery won't trip up
-        clone = button.clone();
-        clone.css('margin-left', pos + "px");
+        // Calculating the right position for the button to appear
+        var pos = $(this).width() - offset;
+        // Button is cloned, so jquery won't trip up, and then moved
+        var clone = button.clone().css('margin-left', pos + "px");
+
         $(this).prepend(clone);
         
-        //Click event
+        // Setting click event
         clone.click(function(){
             var toCopy = $(this).parent().find("code").text();
             copyToClipboard(toCopy);
@@ -87,8 +87,7 @@ $(document).ready(function () {
         
         clone.fadeIn();
     }, function (){
-        $(this).find('._copyButton_').fadeOut(function(){
-            console.log(this);
+        $('.' + buttonId).fadeOut(function(){
             $(this).remove();
         });
     });
