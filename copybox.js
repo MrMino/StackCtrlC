@@ -70,7 +70,6 @@ $(document).ready(function () {
     
     //Hiding, fading, showing, etc.
     $('pre').hover(function (){
-        //======================= Mouse in =======================
         //Calculating the right position for the button to appear
         var pos = $(this).width();
         pos -= offset;
@@ -83,13 +82,13 @@ $(document).ready(function () {
         //Click event
         clone.click(function(){
             var toCopy = $(this).parent().find("code").text();
-            copyToClipboard( toCopy );
+            copyToClipboard(toCopy);
         });
         
-        $(this).find('._copyButton_').fadeIn();
+        clone.fadeIn();
     }, function (){
-        //======================= Mouse out ======================
         $(this).find('._copyButton_').fadeOut(function(){
+            console.log(this);
             $(this).remove();
         });
     });
