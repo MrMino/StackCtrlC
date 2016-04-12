@@ -1,10 +1,10 @@
 
 
 # StackOverflowCtrlC
-A copy button for Stack Overflow markup &lt;pre>s. Made entirely in JavaScript and JQuery.
+A copy button for Stack Overflow markup boxes. Made entirely in JavaScript and JQuery.
 
 [![Chrome webstore](https://cloud.githubusercontent.com/assets/6691643/14452253/b283ca98-008d-11e6-86c7-4379f4ea02ce.png)](https://chrome.google.com/webstore/detail/stack-copy-button/dkejincbnheemdddmbiggcnlidffpedf)
-[![Firefox webstore](https://cloud.githubusercontent.com/assets/6691643/14454078/ce0693bc-0098-11e6-9c9a-68d43dd4a989.png)](https://addons.mozilla.org/pl/firefox/addon/stack-copy-button/)
+[![Firefox webstore](https://cloud.githubusercontent.com/assets/6691643/14454078/ce0693bc-0098-11e6-9c9a-68d43dd4a989.png)](https://addons.mozilla.org/firefox/addon/stack-copy-button/)
 
 ## Features
 - A copy button made entirely with JavaScript and JQuery. 
