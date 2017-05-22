@@ -25,7 +25,8 @@ A copy button for Stack Overflow markup boxes. Made entirely in JavaScript and J
 - [Not invented here syndrome.](https://en.wikipedia.org/wiki/Not_invented_here)
 
 ## Install process
-**Opera**   : Workin on it (or at least I will some rainy day in the future, if I'll really have nothing else to do)
+**Opera**   : Workin on it (or at least I will, some rainy day in the future, if I'll really have nothing else to do)
+
 **Chrome / Firefox** : Dude, I worked to get those webstore badges above for like 15 minutes, and you missed them? Comeon. Click them, dammit!
 
 
